@@ -1,5 +1,16 @@
 ﻿<!DOCTYPE html>
 <html lang=pt-br>
+<style>
+    .alegria {
+        margin: auto;
+        width: 80%;
+        background: #19eae2;
+        padding: 10px;
+    }
+    i .fas{
+        color: aqua;
+    }
+</style>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,24 +26,28 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body><!--*********************-->
+    <div class="alegria">
+        testando
+    </div>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only">Alternar de navegação</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Programa_1</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Best Place</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">Sobre</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contato</a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +59,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2020 - Programa_1</p>
+            <p>&copy; 2020 - &reg;eginaldo&trade;</p>
         </footer>
     </div>
 
